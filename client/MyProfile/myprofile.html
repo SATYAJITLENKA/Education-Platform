@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="./myprofile.css">
+</head>
+<body>
+    <nav>
+        <div class="nav">
+          <div class="home main-nav">
+            <a href="#" class="company-logo"
+              ><img src="../Assets/Logo.png" alt="logo"
+            /></a>
+            <a href="../Home/home.html"><h2>Archana's Classes</h2></a>
+          </div>
+          <div class="home-nav">
+            <ul>
+              <a class="nav-link" onclick="changeColor(this)" href="../Home/home.html"><li >Home</li></a> 
+              <a class="nav-link" onclick="changeColor(this)" href="../About/about.html"><li >About</li></a>
+              <a class="nav-link active" onclick="changeColor(this)" href="../MyProfile/myprofile.html"><li >Profie</li></a>
+            </ul>
+            <a href="../MyProfile/myprofile.html"><img src="../Assets/profile.png" alt="profile" /></a>
+            
+          </div>
+        </div>
+      </nav>
+
+      <div class="profile-name-section">
+        <div class="profile-name">
+            <img src="../Assets/AddProfile.png" alt="">
+            <h4>Hello,Aman</h4>
+        </div>
+        <div >
+            <button class="edit-btn">Edit Profile</button>
+        </div>
+      </div>
+
+      <div class="Details">
+        <div class="General-details">
+            <h3>General Details</h3>
+           <label for="">Name</label>
+           <input type="text" placeholder="Aman Sharma">
+           <label for="">Email address</label>
+           <input type="email" placeholder="Aman Sharma">
+           <label for="">Enter Password</label>
+           <input type="password" placeholder="Aman@1234">
+           <label for="">Enter Phone Number</label>
+           <input type="number" placeholder="99999999">
+           <label for="">Gender</label>
+           <input type="text" placeholder="male">
+        </div>
+        <div class="General-details">
+            <h3>Contact Details</h3>
+           <label for="">Address</label>
+           <input type="text" placeholder="Newtown">
+           <label for="">City</label>
+           <input type="text" placeholder="Delhi">
+           <label for="">State</label>
+           <input type="text" placeholder="Delhi">
+           <label for="">Pincode</label>
+           <input type="number" placeholder="1121212">
+           <label for="">Age</label>
+           <input type="number" placeholder="29">
+        </div>
+      </div>
+
+      <div class="btn">
+        <button class="save-change">Save Changes</button>
+       <a href="../Login/login.html"> <button class="logout">Logout</button></a>
+      </div>
+
+      <script src="../navbar.js"></script>
+</body>
+</html>

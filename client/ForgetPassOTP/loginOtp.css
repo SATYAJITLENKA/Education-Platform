@@ -1,0 +1,78 @@
+
+:root{
+    --primary-text-color:#5F2DED;
+    --secondary-text-color:,
+}
+
+
+
+
+.login-OTP{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 65px;
+    
+
+}
+
+
+
+.resend-OTP-container{
+  display: flex;
+  height: 440px;
+  margin-right:129px ;
+
+
+}
+
+.login-OTP-img{
+    margin-left:85px ;
+}
+
+
+.resend-OTP-container form{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between; 
+   
+}
+
+.OTP-main-box{
+    display: flex;
+    gap: 49px;
+}
+
+.Continue-btn{
+    height: 70px;
+    width: 397px;
+    background-color:#AA90F6;
+    border-radius: 16px;
+    border: 1px solid #121212;
+    color:#FFFFFF ;
+    font-size: 36px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.OTP-box{
+   height: 64px;
+   width: 63px;
+   border-radius: 10px;
+   border: 1px solid #121212;
+  
+ 
+}
+
+span{
+    color:var(--primary-text-color) ;
+}
+.resend{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.login-second-signUp{
+    text-align: center;
+}

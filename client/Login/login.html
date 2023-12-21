@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archana's Classes</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="../global.css">
+  </head>
+  <body>
+    <nav>
+      <div class="container main-nav">
+        <a href="#" class="company-logo"
+          ><img src="../Assets/Logo.png" alt="logo"
+        /></a>
+        <h2>Archana's Classes</h2>
+      </div>
+    </nav>
+
+    <section class="login-section">
+      <div class="login-img">
+        <img src="../Assets/Education & Learning.png" alt="LoginImage" />
+      </div>
+      <div class="login-form">
+        <div style="height: 47; width: 416px;margin-bottom: 27px;"><h3>Login to your account</h3></div>
+        
+        <form id="loginForm">
+         
+          <label for="">Email address or uername</label>
+          <input type="text" id="email" name="email" placeholder="Enter Email address" required />
+          <label for="">Email address or uername</label>
+          <input type="password" id="password" name="password" placeholder="Enter Password" required/>
+          <div id="error-message" style="color: red;"></div>
+          <a href="../ForgetPass/forgetPassword.html"><h4>Forget Password ?</h4></a>
+          <div class="checkbox">
+            <input type="checkbox"/>
+            <p>Remember me</p>
+          </div>
+          
+          <div class="btn-div">
+            <button class="slo-btn"  type="submit">Login</button>
+          </div>
+          <div class="line-or">
+            <hr class="line-hr" />
+            <span>OR</span>
+            <hr  class="line-hr"/>
+          </div>
+
+          <div class="login-second">
+            <div class="login-second-phone">
+                <p>Continue With Phone Number</p>
+            </div>
+            <div class="login-second-signUp">
+              <a href="../SignUp/signup.html"><p>Don't have an account? <span>Sign Up</span></p></a>
+                
+            </div>
+          </div>
+        </form>
+
+       
+      </div>
+    </section>
+
+    <script src="../Login/login.js"></script>
+  </body>
+</html>

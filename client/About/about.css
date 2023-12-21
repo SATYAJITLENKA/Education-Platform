@@ -1,0 +1,42 @@
+
+.about-container{
+    height: 590px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.about-benifit-container{
+    
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+
+}
+.about-benifit-container h2{
+   color: #121212;
+}
+
+.about-benifit-container p{
+    font-size: 16px;
+    font-weight: 500;
+    color:#5F6C76 ;
+    margin-top: 11px;
+    margin-bottom:20px ;
+}
+
+
+
+.benifit-points{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.benifit-points h5{
+    font-size: 16px;
+    font-weight: 500;
+}

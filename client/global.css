@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto+Slab&display=swap');
+
+
+*{
+   margin: 0;
+   padding: 0; 
+   box-sizing: border-box;
+}
+
+
+
+:root{
+    --primary-text-color:#5F2DED;
+    --secondary-text-color:,
+}
+
+
+body{
+    font-family:'Poopins',sans-serif;
+  
+}
+
+h2{
+ font-size: 44px;
+ font-weight: 800;
+ color:var(--primary-text-color);
+}
+
+h3{
+    font-size: 40px;
+    font-weight: 700;
+    color:var(--primary-text-color);
+}
+h4{
+  font-size: 18px;  
+  font-weight: 700;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+}
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 93px;
+    }
+
+p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input{
+    
+    height:64px;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid #121212;
+    font-size: 30px;
+    padding: 10px;
+   
+}
+
+input::placeholder{
+  
+    font-size: 14px;
+    font-weight: 400;
+    
+    
+}
+
+label{
+   font-size: 20px;
+   font-weight: 700;
+}
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 93px;
+   
+    padding-left: 31px;
+
+}
+.slo-btn-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slo-btn{
+    height: 49px;
+    width: 130px;
+    background-color: var(--primary-text-color);
+    color: #FFFFFF;
+    font-size:24px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius:18px;
+}
+
+section{
+    display: flex;
+
+}
+
+.line-or{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-hr{
+    width: 40%;
+    color: #D9D5D5;
+
+}
+input[type="checkbox"]{
+   height:18px;
+   width: 18px;
+}
+
+.btn-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top:11px ;
+}
+
+.required{
+    color: red;
+}
+
+
+/* Navigation Navbar */
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 66px;
+}
+.home-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+
+.home-nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+a{
+    text-decoration: none;
+    color: #121212;
+}
+
+
+.active{
+   color: var(--primary-text-color); 
+   text-decoration: underline;
+   
+}

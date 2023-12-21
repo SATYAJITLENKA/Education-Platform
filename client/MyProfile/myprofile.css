@@ -1,0 +1,79 @@
+:root {
+    --primary-text-color: #5f2ded;
+    --secondary-text-color: #5F2DED87;
+  }
+
+.profile-name-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 72px;
+    margin-right: 129px;
+    margin-top: 55px;
+}
+.profile-name{
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+.profile-name h4{
+    font-size:44px;
+    font-weight: 700;
+}
+
+.edit-btn{
+    height: 45px;
+    width: 119px;
+    background-color:var(--primary-text-color) ;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.Details{
+    display: flex;
+    justify-content: center;
+    gap: 258px;
+    margin-left:75px ;
+    margin-right:147px;
+}
+.General-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 37px;
+    margin-top: 34px;
+    margin-bottom: 70px;
+}
+.save-change{
+    height: 45px;
+    width: 123px;
+    border-radius: 4px;
+    background-color: var(--secondary-text-color);
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.logout{
+    background-color: var(--primary-text-color);
+    height: 45px;
+    width: 86px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   
+}

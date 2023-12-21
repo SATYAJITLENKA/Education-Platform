@@ -1,0 +1,58 @@
+:root {
+  --primary-text-color: #5f2ded;
+  --secondary-text-color: #5f2ded;
+}
+
+.Home-container {
+  padding: 52px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.Home-container-welcome {
+  height: 496px;
+  width: 530px;
+  border-radius: 184.5px;
+  background: linear-gradient(
+    45deg,
+    rgba(209, 187, 163, 0.1) 0%,
+    rgba(205, 156, 113, 0.1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  margin-right: 120px;
+}
+.learning {
+  display: flex;
+  width: 480px;
+  gap: 10px;
+}
+
+.Home-container-welcome h2 {
+  color: #121212;
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 46px;
+}
+
+.Achievement {
+  display: flex;
+  gap: 7px;
+  width: 450px;
+  margin-bottom: 7px;
+  margin-left: -25px;
+}
+.Achievement p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.learning span {
+  font-size: 44px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--primary-text-color);
+}
