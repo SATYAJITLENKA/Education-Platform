@@ -31,10 +31,10 @@
       <div class="profile-name-section">
         <div class="profile-name">
             <img src="../Assets/AddProfile.png" alt="">
-            <h4>Hello,Aman</h4>
+            <h4 id="myname">Hello,</h4>
         </div>
         <div >
-            <button class="edit-btn">Edit Profile</button>
+            <button class="edit-btn" id="edit-profile">Edit Profile</button>
         </div>
       </div>
 
@@ -42,36 +42,36 @@
         <div class="General-details">
             <h3>General Details</h3>
            <label for="">Name</label>
-           <input type="text" placeholder="Aman Sharma">
+           <input type="text" placeholder="Aman Sharma" id="name" readonly>
            <label for="">Email address</label>
-           <input type="email" placeholder="Aman Sharma">
+           <input type="email" placeholder="Aman Sharma" id="email" readonly>
            <label for="">Enter Password</label>
-           <input type="password" placeholder="Aman@1234">
+           <input type="password" placeholder="Aman@1234" id="password" readonly>
            <label for="">Enter Phone Number</label>
-           <input type="number" placeholder="99999999">
+           <input type="number" placeholder="99999999" id="PhoneNo" readonly>
            <label for="">Gender</label>
-           <input type="text" placeholder="male">
+           <input type="text" placeholder="male" id="Gender" readonly>
         </div>
         <div class="General-details">
             <h3>Contact Details</h3>
            <label for="">Address</label>
-           <input type="text" placeholder="Newtown">
+           <input type="text" placeholder="Newtown" id="address" readonly>
            <label for="">City</label>
-           <input type="text" placeholder="Delhi">
+           <input type="text" id="city" placeholder="Delhi" id="city" readonly>
            <label for="">State</label>
-           <input type="text" placeholder="Delhi">
+           <input type="text" placeholder="Delhi" value="Odisha" id="state" readonly>
            <label for="">Pincode</label>
-           <input type="number" placeholder="1121212">
+           <input type="number" placeholder="1121212" id="Pincode" readonly>
            <label for="">Age</label>
-           <input type="number" placeholder="29">
+           <input type="number" placeholder="29" id="age" readonly>
         </div>
       </div>
 
       <div class="btn">
-        <button class="save-change">Save Changes</button>
+        <button class="save-change" id="save-change">Save Changes</button>
        <a href="../Login/login.html"> <button class="logout">Logout</button></a>
       </div>
 
-      <script src="../navbar.js"></script>
+      <script src="../MyProfile/myprofile.js"></script>
 </body>
 </html>

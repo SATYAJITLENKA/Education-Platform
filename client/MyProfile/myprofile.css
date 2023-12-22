@@ -77,3 +77,14 @@
     cursor: pointer;
    
 }
+
+
+.disable-btn{
+    cursor: inherit;
+    background-color:var(--secondary-text-color);
+}
+
+.enable-btn{
+    background-color:var(--primary-text-color);
+}
+
