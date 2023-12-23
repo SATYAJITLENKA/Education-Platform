@@ -43,6 +43,14 @@ const userScema=new mongoose.Schema({
         type:String,
         required:[true,"please Enter pincode"],
         // minlength:[10,"minimun password length is 10"]
+    },
+    gender:{
+        type:String,
+        required:[true,"please Enter gender"],
+    },
+    address:{
+        type:String,
+        required:[true,"please Enter address"],
     }
 
 })

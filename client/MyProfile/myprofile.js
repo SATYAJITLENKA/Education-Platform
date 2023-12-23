@@ -4,7 +4,8 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 
 const phone = document.getElementById('PhoneNo');
-const gender=document.getElementsByName("Gender");
+const gender=document.getElementById("Gender");
+
 const age = document.getElementById('age');
 const address=document.getElementById('address');
 const city = document.getElementById('city');
@@ -20,6 +21,7 @@ editProfileBtn.addEventListener('click',editprofile)
 let userId;
 
 
+
 function editprofile(){
 
     editProfileBtn.classList.add('disable-btn')
@@ -31,6 +33,10 @@ function editprofile(){
     state.removeAttribute('readonly')
     pincode.removeAttribute('readonly')
     age.removeAttribute('readonly')
+    password.removeAttribute('readonly')
+
+
+
 }
 
 async function getData(){
@@ -55,6 +61,9 @@ async function getData(){
         city.value=item.city
         state.value=item.state
         pincode.value=item.pincode
+        address.value=item.address
+        gender.value=item.gender
+        password.value=item.value
        })
 }
 
@@ -65,6 +74,14 @@ savechangesbtn.addEventListener("click",changedInfo)
 async function changedInfo(){
     const updatedData={
         name:Name.value,
+        age:age.value,
+        password:password.value,
+        address:address.value,
+        state:state.value,
+        city:city.value,
+        pincode:pincode.value,
+        phone:phone.value,
+        gender:gender.value,
         
     }
   

@@ -8,25 +8,70 @@
     <link rel="stylesheet" href="./myprofile.css">
 </head>
 <body>
-    <nav>
-        <div class="nav">
-          <div class="home main-nav">
-            <a href="#" class="company-logo"
-              ><img src="../Assets/Logo.png" alt="logo"
-            /></a>
-            <a href="../Home/home.html"><h2>Archana's Classes</h2></a>
-          </div>
-          <div class="home-nav">
-            <ul>
-              <a class="nav-link" onclick="changeColor(this)" href="../Home/home.html"><li >Home</li></a> 
-              <a class="nav-link" onclick="changeColor(this)" href="../About/about.html"><li >About</li></a>
-              <a class="nav-link active" onclick="changeColor(this)" href="../MyProfile/myprofile.html"><li >Profie</li></a>
-            </ul>
-            <a href="../MyProfile/myprofile.html"><img src="../Assets/profile.png" alt="profile" /></a>
-            
-          </div>
-        </div>
-      </nav>
+  <nav>
+    <div class="nav">
+      <div class="home main-nav">
+        <a href="#" class="company-logo"
+          ><img src="../Assets/Logo.png" alt="logo"
+        /></a>
+        <a href="../Home/home.html"><h2>Archana's Classes</h2></a>
+      </div>
+      <div class="home-nav">
+        <ul>
+          <a
+            class="nav-link active"
+            onclick="changeColor(this)"
+            href="../Home/home.html"
+            ><li>Home</li></a
+          >
+          <a
+            class="nav-link"
+            onclick="changeColor(this)"
+            href="../About/about.html"
+            ><li>About</li></a
+          >
+          <a
+            class="nav-link"
+            onclick="changeColor(this)"
+            href="../MyProfile/myprofile.html"
+            ><li>Profie</li></a
+          >
+        </ul>
+        <a href="../MyProfile/myprofile.html"
+          ><img src="../Assets/profile.png" alt="profile"
+        /></a>
+      </div>
+    
+      <div class="hamburger" id="toggleButton">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      
+    </div>
+  </nav>
+  <div class="menu" id="slideMenu">
+    <ul>
+      <a
+        class="nav-link active"
+       
+        href="../Home/home.html"
+        ><li>Home</li></a
+      >
+      <a
+        class="nav-link"
+        
+        href="../About/about.html"
+        ><li>About</li></a
+      >
+      <a
+        class="nav-link"
+      
+        href="../MyProfile/myprofile.html"
+        ><li>Profie</li></a
+      >
+    </ul>
+  </div>
 
       <div class="profile-name-section">
         <div class="profile-name">
@@ -42,28 +87,28 @@
         <div class="General-details">
             <h3>General Details</h3>
            <label for="">Name</label>
-           <input type="text" placeholder="Aman Sharma" id="name" readonly>
+           <input type="text" placeholder="Enter Your Name" id="name" readonly>
            <label for="">Email address</label>
-           <input type="email" placeholder="Aman Sharma" id="email" readonly>
+           <input type="email" placeholder="Enter youremail@gmail.com" id="email" readonly>
            <label for="">Enter Password</label>
-           <input type="password" placeholder="Aman@1234" id="password" readonly>
+           <input type="password" placeholder="Enter password" id="password" readonly>
            <label for="">Enter Phone Number</label>
-           <input type="number" placeholder="99999999" id="PhoneNo" readonly>
+           <input type="number" placeholder="Enter Your PhoneNumber" id="PhoneNo" readonly>
            <label for="">Gender</label>
-           <input type="text" placeholder="male" id="Gender" readonly>
+           <input type="text" placeholder="Gender" id="Gender" readonly>
         </div>
         <div class="General-details">
             <h3>Contact Details</h3>
            <label for="">Address</label>
-           <input type="text" placeholder="Newtown" id="address" readonly>
+           <input type="text" placeholder="Your Address" id="address" readonly>
            <label for="">City</label>
-           <input type="text" id="city" placeholder="Delhi" id="city" readonly>
+           <input type="text" id="city" placeholder="Your City" id="city" readonly>
            <label for="">State</label>
-           <input type="text" placeholder="Delhi" value="Odisha" id="state" readonly>
+           <input type="text" placeholder="Your State"  id="state" readonly>
            <label for="">Pincode</label>
-           <input type="number" placeholder="1121212" id="Pincode" readonly>
+           <input type="number" placeholder="Enter Pincode" id="Pincode" readonly>
            <label for="">Age</label>
-           <input type="number" placeholder="29" id="age" readonly>
+           <input type="number" placeholder="Enter Your age" id="age" readonly>
         </div>
       </div>
 

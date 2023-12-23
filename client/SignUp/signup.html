@@ -25,40 +25,52 @@
         <form action="" id="signup-form">
           <h3>Create Your Account</h3>
           <label>Name<span class="required">*</span></label>
-          <input id="name" type="text" placeholder="Enter Full Name" required/>
-          <label >Email address<span class="required">*</span></label>
-          <input id="email" type="email" placeholder="Enter Email address" required/>
-          <label >Enter Password<span class="required">*</span></label>
-          <input id="password" type="password" placeholder="Enter Password" required />
-          <label 
-            >Enter Phone Number<span class="required">*</span></label
-          >
-          <input id="PhoneNo" type="number" placeholder="Enter Phone Number" />
+          <input id="name" type="text" placeholder="Enter Full Name" required />
+          <label>Email address<span class="required">*</span></label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter Email address"
+            required
+          />
+          <label>Enter Password<span class="required">*</span></label>
+          <input
+            id="password"
+            type="password"
+            placeholder="Enter Password"
+            required
+          />
+          <label>Enter Phone Number<span class="required">*</span></label>
+          <input id="PhoneNo" type="number" placeholder="Enter Phone Number" required/>
           <label for="">Gender<span class="required">*</span></label>
           <div class="Gender-checkbox-main">
             <div class="Gender-checkbox">
               <input type="checkbox" name="Gender" value="Male" />
               <p>Male</p>
-
               <input type="checkbox" name="Gender" value="Female" />
               <p>Female</p>
-
               <input type="checkbox" name="Gender" value="Not specify" />
               <p>Don't wish to specify</p>
             </div>
           </div>
-          <label >Age<span class="required">*</span></label>
-          <input id="age" type="number" placeholder="Enter age" />
-          <label >Address<span class="required">*</span></label>
-          <input id="address" type="text" placeholder="Enter address/use live location" />
+          <label>Age<span class="required">*</span></label>
+          <input id="age" type="number" placeholder="Enter age" required/>
+          <label>Address<span class="required">*</span></label>
+          <input
+            id="address"
+            type="text"
+            placeholder="Enter address/use live location"
+            required
+          />
           <label for="">City<span class="required">*</span></label>
-          <input id="city" type="text" placeholder="Enter city" />
+          <input id="city" type="text" placeholder="Enter city" required/>
           <label for="">State<span class="required">*</span></label>
-          <input id="state" type="text" placeholder="Enter State" />
+          <input id="state" type="text" placeholder="Enter State" required/>
           <label for="">Pincode<span class="required">*</span></label>
-          <input id="Pincode" type="number" placeholder="Enter Pincode" />
-          <div id="error-message" style="color: red;"></div>
-          <p>Forget Password ?</p>
+          <input id="Pincode" type="number" placeholder="Enter Pincode" required />
+          <div id="error-message" style="color: red"></div>
+          <a href="../ForgetPass/forgetPassword.html"><p>Forget Password ?</p></a>
+          
           <div class="checkbox">
             <input type="checkbox" />
             <p>Remember me</p>
