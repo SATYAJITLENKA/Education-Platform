@@ -1,13 +1,13 @@
 const bcrypt = require("bcrypt");
 const { isEmail } = require("validator");
 const User = require("../model/loginModel.js");
-const nodemailer = require('nodemailer');
-const randomOtp = require('random-otp');
+const nodemailer = require("nodemailer");
+const randomOtp = require("random-otp");
 
 const saltRounds = 10;
 
 const validateSignUpData = async (req, res) => {
-  const { name, email, password, phone, age, city, state, pincode } = req.body;
+  const { name, email, password, phone, age, city,address,gender, state, pincode } = req.body;
 
   if (name.trim().length === 0) {
     res.status(400).json({ message: "please enter a Name" });
@@ -59,7 +59,7 @@ const validateSignUpData = async (req, res) => {
   return true;
 };
 const signup = async (req, res) => {
-  const { name, email, password, phone, age, state, city, pincode } = req.body;
+  const { name, email, password, phone, age, state, city, pincode, address,gender} = req.body;
   const isValid = await validateSignUpData(req, res);
   if (isValid) {
     try {
@@ -73,6 +73,8 @@ const signup = async (req, res) => {
         state,
         city,
         pincode,
+        address,
+        gender
       });
       res.json({
         message: "Account created successfully",
@@ -85,6 +87,8 @@ const signup = async (req, res) => {
           state: user.state,
           city: user.city,
           pincode: user.pincode,
+          address:user.address,
+        gender:user.gender
         },
       });
     } catch (error) {
@@ -102,7 +106,7 @@ const updateData = async (req, res) => {
   try {
     const { userId } = req.params;
 
-    const { name, email, password, phone, age, state, city, pincode } =
+    const { name, email, password, phone,address,gender, age, state, city, pincode } =
       req.body;
 
     const hashedPassword = password
@@ -123,6 +127,8 @@ const updateData = async (req, res) => {
     user.state = state || user.state;
     user.city = city || user.city;
     user.pincode = pincode || user.pincode;
+    user.address = address || user.address;
+    user.gender = gender || user.gender;
 
     await user.save();
 
@@ -133,7 +139,9 @@ const updateData = async (req, res) => {
         name: user.name,
         email: user.email,
         phone: user.phone,
+        gender:user.address,
         age: user.age,
+        address:user.address,
         state: user.state,
         city: user.city,
         pincode: user.pincode,
@@ -145,40 +153,35 @@ const updateData = async (req, res) => {
   }
 };
 
-function sendOTP(req,res){
-    // const { email } = req.query;
-    const { email } = req.body;
-    // const otp = randomOtp({ digits: 4, letters: false, specialChars: false }).gen();
-   const otp="1234";
-   
-     const transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user:'mojagannath11@gmail.com', 
-            pass: 'mojagannath11@gmail', 
-        },
-    });
+//tryed to send OTP
 
-    const mailOptions = {
-        from:'mojagannath11@gmail.com',  
-        to: email,
-        subject: 'Your OTP',
-        text: `Your OTP is the send mail`,
-    };
-    
+function sendOTP(req, res) {
+  // const { email } = req.query;
+  const { email } = req.body;
+  const otp = "1234";
 
-      transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            return res.status(500).json({ message: 'Error sending email' ,error});
-        }
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: "satya@gmail.com",
+      pass: "satya@gmail",
+    },
+  });
 
-        res.status(200).json({ message: 'OTP sent successfully', info });
-    });
+  const mailOptions = {
+    from: "mojagannath11@gmail.com",
+    to: email,
+    subject: "Your OTP",
+    text: `Your OTP is the send mail`,
+  };
 
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      return res.status(500).json({ message: "Error sending email", error });
+    }
 
-
+    res.status(200).json({ message: "OTP sent successfully", info });
+  });
 }
 
-
-
-module.exports = { signup, getData, updateData ,sendOTP};
+module.exports = { signup, getData, updateData, sendOTP };

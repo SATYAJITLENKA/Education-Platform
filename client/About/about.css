@@ -40,3 +40,21 @@
     font-size: 16px;
     font-weight: 500;
 }
+
+@media only screen and (max-width: 1285px) {
+    .about-container {
+      margin-top: 150px;
+      flex-direction: column;
+      text-align: center;
+      
+    }
+  
+    .about-container img {
+      margin-bottom: 20px;
+    }
+  
+    .about-benifit-container {
+      margin-left: 0;
+    }
+  }
+  

@@ -69,3 +69,29 @@ label{
 .login-second-signUp span{
     color: var(--primary-text-color);
 }
+
+
+@media (max-width: 1255px) {
+    .signup-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .signup-img-div {
+       
+        display: none;
+    }
+
+    .signup-form {
+        margin: 0;
+    }
+
+    .signup-form form {
+        width: 100%;
+    }
+
+    .login-second-signUp {
+        margin-bottom: 20px;
+    }
+}

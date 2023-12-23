@@ -186,6 +186,132 @@ a{
    text-decoration: underline;
    
 }
+.nav{
+  
+    width: 100vw;
+}
+.home-nav{
+    position: fixed;
+    right: 40px;
+}
+
+
+@media (max-width: 570px) {
+   
+    .company-logo img {
+        height: 40px; 
+    }
+    .main-nav{
+       
+        width: 420px;
+        gap: 20px;
+    }
+
+    .container h2 {
+        font-size: 25px;
+    }
+    .Home-container-welcome {
+        margin-left: 0;
+        text-align: center;
+      }
+}
 
 
 
+
+
+@media (max-width: 770px) {
+    .home-nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background-color: #fff; 
+      width: 100%;
+    }
+  
+    .home-nav.active ul {
+      display: flex;
+    }
+  
+    .home-nav img {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      position: fixed;
+      top: 20px;
+      right: 10px;
+      
+    }
+  
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: var(--primary-text-color);
+      margin: 5px 0;
+      transition: 0.4s;
+    }
+  
+    .home-nav.active .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .home-nav.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .home-nav.active .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  
+    .nav {
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    
+    
+  }
+  
+  @media (max-width: 1221px) {
+    .Home-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .Home-container img {
+        margin-bottom: 20px;
+      }
+
+
+  }
+
+
+
+  
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    width: 250px;
+    height: 100%;
+    background-color: var(--primary-text-color);
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: left 0.30s ease; 
+  }
+  
+  .menu a {
+    display: block;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  

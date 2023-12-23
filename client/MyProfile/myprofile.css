@@ -88,3 +88,41 @@
     background-color:var(--primary-text-color);
 }
 
+@media only screen and (max-width: 1150px) {
+   
+    .profile-name img {
+      margin-bottom: 10px;
+    }
+  
+    .Details {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+    }
+  
+    .General-details {
+      margin-right: 0;
+      
+    }
+    .btn{
+        margin-right: 110px;
+    }
+    .profile-name-section{
+        flex-direction: column;
+        align-items: flex-start;
+       
+      }
+    
+  }
+ 
+  @media only screen and (max-width: 630px) {
+    .profile-name img {
+        height: 60px;
+      }
+      
+      #myname{
+        font-size: 30px;
+      }
+  }
+  
