@@ -1,7 +1,4 @@
-// import express from "express"
-// import mongoose from "mongoose"
-// import cors from "cors"
-// import dotenv from 'dotenv'
+
 const express =require("express")
 const mongoose =require("mongoose")
 const cors=require("cors")
@@ -25,7 +22,12 @@ app.use('/api',router)
 //database connection
 const databaseConnection=async()=>{
    
-    mongoose.connect(process.env.URL)
+    mongoose.connect(process.env.URL, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        bufferCommands: true,
+        
+      })
     .then(()=>console.log("databse connected"))
     .catch((err)=>console.log(err))
 }
